@@ -1,6 +1,6 @@
 package testCases;
 
-import com.beust.jcommander.Parameter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
@@ -11,13 +11,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import utility.ReadConfig;
 
+import java.io.IOException;
 import java.sql.DataTruncation;
 import java.util.Random;
 
 public class BaseClass {
 
     public WebDriver driver;
+    ReadConfig readConfig;
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser)
@@ -44,7 +47,12 @@ public class BaseClass {
         }
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.get("https://demo.nopcommerce.com/");
+        try {
+            readConfig = new ReadConfig();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        driver.get(readConfig.setUrl());
     }
 
     @AfterMethod

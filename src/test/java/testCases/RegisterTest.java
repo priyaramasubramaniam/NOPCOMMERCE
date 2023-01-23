@@ -67,7 +67,7 @@ public class RegisterTest extends BaseClass{
         rp.clickRegisterBtn();
         Assert.assertEquals(driver.getPageSource().contains("First name is required."), true);
         Assert.assertEquals(driver.getPageSource().contains("Last name is required."), true);
-        Assert.assertEquals(driver.getPageSource().contains("lllll is required."), true);
+        Assert.assertEquals(driver.getPageSource().contains("Email is required."), true);
         Assert.assertEquals(driver.getPageSource().contains("Password is required."), true);
     }
 
