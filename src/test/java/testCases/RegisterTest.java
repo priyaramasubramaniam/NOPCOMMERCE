@@ -71,4 +71,5 @@ public class RegisterTest extends BaseClass{
         Assert.assertEquals(driver.getPageSource().contains("Password is required."), true);
     }
 
+
 }

@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fd651e-2f41-4ab7-93cc-6a6dd738e990" name="Changes" comment="Test1">
-      <change afterPath="$PROJECT_DIR$/Configurations/Config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ForgotPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testCases/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testData/Register.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/Config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/waioz/eclipse-workspace/NOPCOMMERCE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +62,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/testData" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml">
     <configuration name="C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NOPCOMMERCE" />
@@ -148,5 +161,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test1" />
     <option name="LAST_COMMIT_MESSAGE" value="Test1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java</url>
+          <line>18</line>
+          <properties field="txtInputEmail" class="pageObjects.LoginPage" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

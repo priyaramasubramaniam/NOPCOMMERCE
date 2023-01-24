@@ -13,6 +13,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/register?returnUrl=%2F']")
     public WebElement linkRegister;
 
+    @FindBy(xpath = "//a[@class='ico-login']")
+    private WebElement linkLogin;
+
     //2. Constructor
     public HomePage(WebDriver driver)
     {
@@ -25,6 +28,12 @@ public class HomePage {
     {
         linkRegister.click();
         return new RegisterPage(driver);
+    }
+
+    public LoginPage clickLoginLink()
+    {
+        linkLogin.click();
+        return new LoginPage(driver);
     }
 
 

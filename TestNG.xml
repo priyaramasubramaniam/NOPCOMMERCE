@@ -6,13 +6,20 @@
 
     <test thread-count="5" name="Test">
         <classes>
-            <class name="testCases.RegisterTest">
+<!--            <class name="testCases.RegisterTest">-->
+<!--                <methods>-->
+<!--                    <include name="TC_RegisterMand_001"/>-->
+<!--                    <include name="TC_RegisterAll_001"/>-->
+<!--                    <include name="TC_RegisterWithoutMan_003"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="testCases.LoginTest">
                 <methods>
-                    <include name="TC_RegisterMand_001"/>
-                    <include name="TC_RegisterAll_001"/>
-                    <include name="TC_RegisterWithoutMan_003"/>
+<!--                    <include name="TC_Without_Credentials"/>-->
+                    <include name="TC_ForgotPswdLinK_003"/>
                 </methods>
             </class>
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

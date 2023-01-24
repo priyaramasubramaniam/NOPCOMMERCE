@@ -16,4 +16,6 @@ public class ReadConfig {
     }
 
     public String setUrl(){return prop.getProperty("url");}
+    public String setEmail(){return prop.getProperty("email");}
+    public String setPassword(){return prop.getProperty("password");}
 }
