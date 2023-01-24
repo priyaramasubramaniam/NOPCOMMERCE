@@ -15,20 +15,29 @@ public class RegisterTest extends BaseClass{
     {
        hp = new HomePage(driver);
        rp = hp.clickRegisterLink();
+       logger.info("Register link Clicked");
        rp.setInputFirstNameRequired("priya");
+       logger.info("First name Entered");
        rp.setInputLastNameRequired("SP");
+       logger.info("LastName entered");
        rp.setInputEmail(randomString());
+       logger.info("Email entered");
        rp.setInputPasswordRequired("123456");
+       logger.info("Password enterd");
        rp.setInputPassword("123456");
+       logger.info("Confirm password enterd");
        rp.clickRegisterBtn();
+       logger.info("Register button is clicked");
        if(driver.getPageSource().contains("Your registration completed"))
        {
            Assert.assertTrue(true);
            System.out.println(driver.getTitle());
+           logger.info("Register user is successfully created");
        }
        else
        {
            Assert.assertTrue(false);
+           logger.warn("User Registration is Unsuccessful");
        }
     }
 
@@ -70,6 +79,4 @@ public class RegisterTest extends BaseClass{
         Assert.assertEquals(driver.getPageSource().contains("Email is required."), true);
         Assert.assertEquals(driver.getPageSource().contains("Password is required."), true);
     }
-
-
 }
