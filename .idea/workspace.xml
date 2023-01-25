@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fd651e-2f41-4ab7-93cc-6a6dd738e990" name="Changes" comment="Test2">
-      <change afterPath="$PROJECT_DIR$/Configurations/Log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utility/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testCases/SearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utility/Reporting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/Config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,9 +122,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NOPCOMMERCE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.SearchTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.TC_EmptySearchBox_003" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NOPCOMMERCE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.SearchTest" />
+      <option name="METHOD_NAME" value="TC_EmptySearchBox_003" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml" />
+        <item itemvalue="TestNG.SearchTest" />
+        <item itemvalue="TestNG.SearchTest.TC_EmptySearchBox_003" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.RegisterTest.TC_RegisterMand_001" />
       </list>
@@ -170,16 +216,7 @@
     <MESSAGE value="Test2" />
     <option name="LAST_COMMIT_MESSAGE" value="Test2" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java</url>
-          <line>18</line>
-          <properties field="txtInputEmail" class="pageObjects.LoginPage" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NOPCOMMERCE$C__Users_dell_AquaProjects_NOPCOMMERCE_TestNG_xml.ic" NAME="C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml Coverage Results" MODIFIED="1674645449121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

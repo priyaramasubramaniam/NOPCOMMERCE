@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
+    <listeners>
+        <listener class-name="utility.Reporting"/>
+    </listeners>
     <parameter name="browser" value="chrome"/>
 
     <test thread-count="5" name="Test">
@@ -9,16 +11,19 @@
             <class name="testCases.RegisterTest">
                 <methods>
                     <include name="TC_RegisterMand_001"/>
-<!--                    <include name="TC_RegisterAll_001"/>-->
-<!--                    <include name="TC_RegisterWithoutMan_003"/>-->
+                    <include name="TC_RegisterAll_001"/>
+                    <include name="TC_RegisterWithoutMan_003"/>
                 </methods>
             </class>
-<!--            <class name="testCases.LoginTest">-->
-<!--                <methods>-->
-<!--                    <include name="TC_Without_Credentials"/>-->
-<!--                    <include name="TC_ForgotPswdLinK_003"/>-->
-<!--                </methods>-->
-<!--            </class>-->
+
+            <class name="testCases.SearchTest">
+                <methods>
+                    <include name="TC_Correct_ProductVisible_001"/>
+                    <include name="TC_InCorrect_ProductVisible_002"/>
+                    <include name="TC_EmptySearchBox_003"/>
+
+                </methods>
+            </class>
 
         </classes>
     </test> <!-- Test -->

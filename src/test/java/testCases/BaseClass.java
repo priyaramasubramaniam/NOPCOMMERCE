@@ -1,27 +1,28 @@
 package testCases;
 
-
+import org.openqa.selenium.TakesScreenshot;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 import utility.ReadConfig;
 
+import java.io.File;
 import java.io.IOException;
 
 public class BaseClass {
 
     public WebDriver driver;
     ReadConfig readConfig;
-
 
 
     public static Logger logger;
@@ -69,8 +70,11 @@ public class BaseClass {
     }
 
     @AfterMethod
-    public void teardown()
+    public void teardown(ITestResult testResult)
     {
+        if (ITestResult.FAILURE == testResult.getStatus()) {
+            takeScreenshot(driver, testResult.getName());
+        }
         driver.quit();
         logger.info("Browser window closed Successfully");
     }
@@ -80,4 +84,13 @@ public class BaseClass {
         return RandomStringUtils.randomAlphabetic(5) + "@gmail.com";
     }
 
+    //To Take Screenshot
+    public void takeScreenshot(WebDriver driver, String fileName) {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(src, new File(System.getProperty("user.dir") + "/Screenshots/"+ fileName + ".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

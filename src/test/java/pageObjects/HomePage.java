@@ -16,6 +16,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@class='ico-login']")
     private WebElement linkLogin;
 
+    @FindBy(xpath = "//input[@id='small-searchterms']") private WebElement searchBox;
+    @FindBy(xpath = "//button[@type='submit']") private WebElement btnsubmitSearch;
+
     //2. Constructor
     public HomePage(WebDriver driver)
     {
@@ -36,6 +39,15 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-
+//    public void setSearchBox(String productName)
+//    {
+//        searchBox.sendKeys(productName);
+//    }
+//
+//    public SearchPage clickSearchSubmitBtn()
+//    {
+//        btnsubmitSearch.click();
+//        return new SearchPage(driver);
+//    }
     
 }
