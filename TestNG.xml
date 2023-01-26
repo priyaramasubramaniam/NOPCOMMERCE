@@ -10,21 +10,18 @@
         <classes>
             <class name="testCases.RegisterTest">
                 <methods>
-                    <include name="TC_RegisterMand_001"/>
-                    <include name="TC_RegisterAll_001"/>
-                    <include name="TC_RegisterWithoutMan_003"/>
-                </methods>
-            </class>
-
-            <class name="testCases.SearchTest">
-                <methods>
-                    <include name="TC_Correct_ProductVisible_001"/>
-                    <include name="TC_InCorrect_ProductVisible_002"/>
-                    <include name="TC_EmptySearchBox_003"/>
+<!--                    <include name="TC_RegisterMan_001"/>-->
+<!--                    <include name="TC_RegisterAll_002"/>-->
+<!--                    <include name="TC_RegisterNull_003"/>-->
+<!--                    <include name="TC_RegisterNewsLetterEnabled_004"/>-->
+<!--                    <include name="TC_RegisterNewsLetterDisabled_005"/>-->
+<!--                    <include name="TC_RegisterViaLoginLink_006"/>-->
+<!--                    <include name="TC_RegisterWithExistMail_008"/>-->
+                    <include name="TC_RegisterWithInvalidMail_008"/>
 
                 </methods>
             </class>
-
         </classes>
+
     </test> <!-- Test -->
 </suite> <!-- Suite -->

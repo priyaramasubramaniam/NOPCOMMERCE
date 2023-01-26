@@ -8,22 +8,33 @@ import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.RegisterPage;
+import pageObjects.SearchPage;
 import utility.ReadConfig;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
 public class BaseClass {
 
     public WebDriver driver;
     ReadConfig readConfig;
-
+    HomePage hp;
+    RegisterPage rp;
+    LoginPage lp;
+    SearchPage sp;
+    LoginTest lt;
 
     public static Logger logger;
     @Parameters("browser")
@@ -92,5 +103,11 @@ public class BaseClass {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void selectDropdownOption(WebElement dropdown, String option) {
+        Select select = new Select(dropdown);
+        select.selectByVisibleText(option);
+
     }
 }

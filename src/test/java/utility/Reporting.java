@@ -28,7 +28,11 @@ public class Reporting extends TestListenerAdapter {
       String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
       String repName = "test-Report"+timeStamp+".html";
       extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Test-Report/"+repName);
-      extentSparkReporter.loadXMLConfig("/home/waioz/eclipse-workspace/NOPCOMMERCE/extent-config.xml");
+      try {
+         extentSparkReporter.loadXMLConfig("extent-config.xml");
+      } catch (IOException e) {
+         throw new RuntimeException(e);
+      }
 
       extentSparkReporter.config().setReportName("Functional Test Automation Report");
       extentSparkReporter.config().setDocumentTitle("Automation Test Title");
@@ -55,11 +59,7 @@ public class Reporting extends TestListenerAdapter {
       File f = new File(screenshotPath);
       if(f.exists())
       {
-         try {
-            extentTest.fail("Screenshot is below"+ extentTest.addScreenCaptureFromPath(screenshotPath));
-         } catch (IOException e) {
-            throw new RuntimeException(e);
-         }
+         extentTest.fail("Screenshot is below"+ extentTest.addScreenCaptureFromPath(screenshotPath));
       }
    }
 

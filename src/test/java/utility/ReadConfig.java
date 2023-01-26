@@ -20,4 +20,16 @@ public class ReadConfig {
     public String setPassword(){return prop.getProperty("password");}
     public String setProductname(){return prop.getProperty("product_name");}
     public String setIncorrectProdName(){return prop.getProperty("incorrect_product_name");}
+
+    public String setFname(){return prop.getProperty("fname");}
+    public String setlname(){return prop.getProperty("lname");}
+    public String setREmail(){return  prop.getProperty("remail");}
+    public String setRPassword(){return prop.getProperty("rpassword");}
+    public String setCRPassword(){return prop.getProperty("rcpassword");}
+
+    public String[] emails()
+    {
+        String[] invalidEmails = prop.getProperty("emails").split(",");
+        return  invalidEmails;
+    }
 }
