@@ -4,23 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fd651e-2f41-4ab7-93cc-6a6dd738e990" name="Changes" comment="Test2">
-      <change afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testCases/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utility/Reporting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="43fd651e-2f41-4ab7-93cc-6a6dd738e990" name="Changes" comment="Test1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configurations/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/Config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ForgotPasswordPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/ReadConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ResultRegisterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/ForgotPasswordPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/RegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/ResultRegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/SearchPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/BaseClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/RegisterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCases/SearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/ReadConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/Reporting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utility/TestUtils.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +38,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,29 +55,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/waioz/eclipse-workspace/NOPCOMMERCE",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/testData" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Configurations" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager" selected="TestNG.C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml">
     <configuration name="C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NOPCOMMERCE" />
@@ -122,46 +115,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NOPCOMMERCE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.SearchTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest.TC_EmptySearchBox_003" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NOPCOMMERCE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCases" />
-      <option name="MAIN_CLASS_NAME" value="testCases.SearchTest" />
-      <option name="METHOD_NAME" value="TC_EmptySearchBox_003" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml" />
-        <item itemvalue="TestNG.SearchTest" />
-        <item itemvalue="TestNG.SearchTest.TC_EmptySearchBox_003" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.RegisterTest.TC_RegisterMand_001" />
       </list>
@@ -179,6 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674494931568</updated>
       <workItem from="1674494932961" duration="6519000" />
+      <workItem from="1674719064939" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="Test1">
       <created>1674500331042</created>
@@ -187,14 +144,7 @@
       <option name="project" value="LOCAL" />
       <updated>1674500331042</updated>
     </task>
-    <task id="LOCAL-00002" summary="Test2">
-      <created>1674563518678</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674563518678</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,10 +163,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test1" />
-    <MESSAGE value="Test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test2" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NOPCOMMERCE$C__Users_dell_AquaProjects_NOPCOMMERCE_TestNG_xml.ic" NAME="C:/Users/dell/AquaProjects/NOPCOMMERCE/TestNG.xml Coverage Results" MODIFIED="1674645449121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test1" />
   </component>
 </project>

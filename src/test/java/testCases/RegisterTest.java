@@ -1,10 +1,7 @@
 package testCases;
 
-import com.beust.ah.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.HomePage;
-import pageObjects.RegisterPage;
 
 public class RegisterTest extends BaseClass{
 
