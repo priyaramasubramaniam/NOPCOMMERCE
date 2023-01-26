@@ -179,29 +179,23 @@ public class RegisterTest extends BaseClass{
         rp.setInputFirstNameRequired(readConfig.setFname());
         rp.setInputLastNameRequired(readConfig.setlname());
 
-        for(String invaildEMail:readConfig.emails())
+        String[] invalidEmails = readConfig.getEmails();
+        for(String invaildEMail:invalidEmails)
         {
             rp.setInputWrongEmail(invaildEMail);
+            Thread.sleep(3000);
+            rp.setInputPasswordRequired(readConfig.setRPassword());
+            rp.setInputPassword(readConfig.setCRPassword());
+            rp.setButtonRegister();
             if(driver.getPageSource().contains("Wrong email"))
             {
                 Assert.assertTrue(true);
+                rp.inputWrongEmail.clear();
             }
             else
             {
                 Assert.assertTrue(false);
             }
-        }
-
-
-        rp.setInputPasswordRequired(readConfig.setRPassword());
-        rp.setInputPassword(readConfig.setCRPassword());
-        rp.setButtonRegister();
-        if(driver.getPageSource().contains("The specified email already exists"))
-        {
-            Assert.assertTrue(true);
-        }
-        else {
-            Assert.assertTrue(false);
         }
     }
 

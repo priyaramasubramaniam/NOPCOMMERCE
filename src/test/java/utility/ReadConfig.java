@@ -27,9 +27,9 @@ public class ReadConfig {
     public String setRPassword(){return prop.getProperty("rpassword");}
     public String setCRPassword(){return prop.getProperty("rcpassword");}
 
-    public String[] emails()
+    public String[] getEmails()
     {
-        String[] invalidEmails = prop.getProperty("emails").split(",");
+        String[] invalidEmails = prop.getProperty("emails").split(",\\s*");
         return  invalidEmails;
     }
 }
